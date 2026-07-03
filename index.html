@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>待办清单</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="app-shell" aria-labelledby="app-title">
+      <section class="todo-panel">
+        <header class="app-header">
+          <p class="eyebrow">任务控制台</p>
+          <h1 id="app-title">111</h1>
+        </header>
+
+        <form id="todo-form" class="todo-form" autocomplete="off">
+          <label class="sr-only" for="todo-input">输入新任务</label>
+          <input
+            id="todo-input"
+            name="todo"
+            type="text"
+            maxlength="80"
+            placeholder="输入任务指令"
+            required
+          />
+          <button type="submit">写入</button>
+        </form>
+
+        <p id="todo-error" class="todo-error" role="alert" aria-live="polite"></p>
+
+        <div class="toolbar" aria-label="任务筛选">
+          <button class="filter-button active" type="button" data-filter="all">全部</button>
+          <button class="filter-button" type="button" data-filter="active">执行中</button>
+          <button class="filter-button" type="button" data-filter="completed">已完成</button>
+        </div>
+
+        <ul id="todo-list" class="todo-list" aria-live="polite"></ul>
+
+        <footer class="todo-footer">
+          <span id="todo-count">0 项未完成</span>
+          <button id="clear-completed" class="ghost-button" type="button">清空已完成</button>
+        </footer>
+      </section>
+    </main>
+
+    <script src="./script.js" defer></script>
+  </body>
+</html>

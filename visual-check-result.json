@@ -1,0 +1,17 @@
+{
+  "title": "Todo List",
+  "itemCount": 2,
+  "panelBox": {
+    "x": 280,
+    "y": 197.296875,
+    "width": 720,
+    "height": 505.390625
+  },
+  "inputBox": {
+    "x": 309,
+    "y": 309.6875,
+    "width": 584,
+    "height": 48
+  },
+  "activeFilterColor": "rgb(88, 242, 194)"
+}
